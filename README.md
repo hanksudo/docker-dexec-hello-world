@@ -1,4 +1,5 @@
 # docker-dexec-hello-world
+
 :whale: Use dexec to execute different language code in docker container.
 
 ## Prerequisite
@@ -12,4 +13,15 @@
 ```
 go get github.com/docker-exec/dexec
 ./run.sh
+```
+
+## Troubleshoot
+
+UnicodeEncodeError on Python3 and resolve way.
+https://github.com/docker-exec/dexec/issues/26
+
+### Run on Python 2
+
+```
+dexec -s dexec/python2 helloworld.py
 ```
