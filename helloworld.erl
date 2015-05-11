@@ -1,3 +1,3 @@
 %% -*- erlang -*-
 main([]) ->
-    io:fwrite("hello world\n").
+    io:fwrite("Hello, 世界！\n").
