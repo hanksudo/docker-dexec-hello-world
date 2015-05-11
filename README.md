@@ -10,9 +10,15 @@
 
 ## Run
 
-```
+```bash
 go get github.com/docker-exec/dexec
 ./run.sh
+```
+
+## Delete all images
+
+```bash
+docker images | grep dexec | awk '{print $3}' | xargs -I {} docker rmi {}
 ```
 
 ## Troubleshoot
